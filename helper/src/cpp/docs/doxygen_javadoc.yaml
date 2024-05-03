@@ -7,7 +7,7 @@ templates:
       - template_declaration
     template: |
       /**
-       *  {{ char }}brief [TODO:summary]
+       * [TODO:summary]
       {% if tparams %}
        *
         {% for tparam in tparams %}
@@ -24,20 +24,22 @@ templates:
       - function_declarator
     template: |
       /**
-       *  {{ char }}brief [TODO:summary]
-       *
+       * [TODO:summary]
       {% if tparams %}
+       *
         {% for tparam in tparams %}
        * {{ char }}tparam {{ tparam.name }} [TODO:description]
         {% endfor %}
       {% endif %}
       {% if params %}
+       *
         {% for param in params %}
-       * {{ char }}param[[TODO:direction]] {{ param.name | default(value="[TODO:name]") }} [TODO:description]
+       * {{ char }}param {{ param.name | default(value="[TODO:name]") }} [TODO:description]
         {% endfor %}
       {% endif %}
       {% if return_type %}
-       *  {{ char }}return [TODO:description]
+       *
+       * {{ char }}return [TODO:description]
       {% endif %}
        */
 
@@ -47,7 +49,7 @@ templates:
       - template_declaration
     template: |
       /**
-       * struct {{ name }} - [TODO:description]
+       * [TODO:description]
       {% if tparams %}
        *
         {% for tparam in tparams %}
@@ -61,5 +63,5 @@ templates:
       - field_declaration
     template: |
       /**
-       *  {{ char }}{{ name }} [TODO:description]
+       * {{ char }}{{ name }} [TODO:description]
        */
