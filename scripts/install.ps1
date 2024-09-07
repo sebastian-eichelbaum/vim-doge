@@ -24,7 +24,7 @@ $AppVersion = Get-Content "$RootDir\.version"
 
 $AssetPath = "$RootDir\bin\$AssetName"
 
-$DownloadUrl = "https://github.com/kkoomen/vim-doge/releases/download/v$AppVersion/$AssetName"
+$DownloadUrl = "https://github.com/sebastian-eichelbaum/vim-doge/releases/download/v$AppVersion/$AssetName"
 
 if (Test-Path $AssetPath) {
   Remove-Item "$AssetPath"

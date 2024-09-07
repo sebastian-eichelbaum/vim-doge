@@ -3,9 +3,9 @@
 This fork modifies:
 
 - the C++ doxygen_javadoc style to NOT use brief and direction for param.
-- Disables the install function in autoload/doge.vim
+- Installs the vim-doge-helper binary from this repo.
 
-You have to build the helper binary manually:
+You have to build the helper binary manually?
 
 ```sh
   mkdir -p bin
