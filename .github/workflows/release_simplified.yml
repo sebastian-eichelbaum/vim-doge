@@ -19,7 +19,7 @@ jobs:
 
     runs-on: ${{ matrix.settings.platform }}
     steps:
-      - name: Checkout sebastian-eichelbaum/vim-doge
+      - name: Checkout seichelbaum/vim-doge
         uses: actions/checkout@v4
 
       - name: Install Rust stable
